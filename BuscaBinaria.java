@@ -47,7 +47,7 @@ public class BuscaBinaria {
         }else{
             System.out.println("Valor  "+valorprocurado+" encontrado");
         }
-    }
+    }// Mostra se o valor foi encontrado
 
 
 }
