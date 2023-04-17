@@ -30,7 +30,7 @@ public class EstruturaPilha {
         return array[top];
     }
     public boolean isEmpty(){
-        return top == -1;
+        return top == -1; //Verifica se pilha está vazia , comparando o top da pilha que é inicializado em -1
     }
     public void getpilhanumbers(){ // mostrar os valores dos arrays armazenados
         for(int i = 0 ;i<=array.length;i++){
