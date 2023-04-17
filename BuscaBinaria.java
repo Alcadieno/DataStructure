@@ -22,7 +22,7 @@ public class BuscaBinaria {
                 j=j-1;
             }
             array[j+1]=key;
-            //Ordena o Vetor
+            //Algoritmo InsertionSort ordena vetor , já que a BuscaBinária só é válida com um vetor ORDENADO 
         }
     }
 
