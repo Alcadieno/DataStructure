@@ -5,16 +5,16 @@ public class NumerosPrimos {
     private ArrayList<Integer>  arrayprimos =new ArrayList<>();
     //Objeto do tipo Arraylist instanciado para guardar numeros primos
 
-    public void primos(){
+    public void primos(){   //Percorre de  1 a 1000 e utiliza o metodo IsPrime para saber se o numero é primo
         for(int i = 1; i<=1000; i++){
             if (isPrime(i)){
                arrayprimos.add(i);
-                //Percorre de  1 a 1000 e utiliza o metodo IsPrime para saber se o numero é primo
+               
             }
         }
-        System.out.println(arrayprimos); // Mostra o ArrayList contendo numeros Primos
+        System.out.println(arrayprimos);// Mostra o ArrayList contendo numeros Primos
     }
-    public static boolean isPrime(int n){
+    public static boolean isPrime(int n){ // Metodo que verifica se o numero eh Primo
         if(n<=1){
             return false;
         }
@@ -23,9 +23,9 @@ public class NumerosPrimos {
                 return false;
             }
         }
-        return true; // Metodo que verifica se o numero eh Primo
+        return true; 
     }
-    public int buscabinaria (int busca){
+    public int buscabinaria (int busca){ // Algoritmo de busca binaria implementado em ArrayList
         this.busca  = busca;
         int inferior = 0;
         int superior = arrayprimos.size() - 1; //Em array utilizamos array.lenght
@@ -43,16 +43,16 @@ public class NumerosPrimos {
 
             }
         }
-        return -1;// Algoritmo de busca binaria implementado em ArrayList
+        return -1;
 
     }
-    public void getprime(){
+    public void getprime(){ // Verifica se o numero buscado pertece ao ArrayList de numeros  Primos
         if(buscabinaria(busca)==-1){
             System.out.println("Valor "+busca+"  NAO EH PRIMO");
 
         }else{
             System.out.println("Valor "+busca+"  EH PRIMO");
         }
-    }// Verifica se o numero buscado pertece ao ArrayList de numeros  Primos
+    }
 } 
 //não tratei exceções :z !
