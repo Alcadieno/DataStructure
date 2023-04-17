@@ -3,18 +3,18 @@ public class EstruturaPilha {
     private  int top;
 
     public EstruturaPilha (int size){
-        array = new int[size];
+        array = new int[size]; //Metodo EstrturaPilha recebe um parâmetro do tipo int que é o tamanho da pilha
         top = -1;
     }
     public void push (int value){
         if(top == array.length -1){
-            throw new RuntimeException("Pilha cheia");
+            throw new RuntimeException("Pilha cheia");  //Adiciona um elemento a pilha  , tratando a exceão pilha cheia
 
         }
         top++;
         array[top]=value;
     }
-    public int pop (){
+    public int pop (){    //Remore um  elemento da pilha , tratanto a exeção pilha vazia                          
         if(isEmpty()){
             throw new RuntimeException("Pilha vazia");
 
@@ -22,10 +22,10 @@ public class EstruturaPilha {
        int value = array[top];
         top--;
         return value;
-    }
+    }                                   
     public int peek(){
         if(isEmpty()){
-            throw new RuntimeException("Pilha vazia");
+            throw new RuntimeException("Pilha vazia"); //Retorna o elemento do topo da pilha , mas sem removê-lo
         }
         return array[top];
     }
@@ -39,7 +39,7 @@ public class EstruturaPilha {
         }
 
     }
-    public void mostrarpilha (EstruturaPilha pilha){
+    public void mostrarpilha (EstruturaPilha pilha){ //mostra a pilha
         int[]array1 = pilha.array;
         int top1 =pilha.top;
         System.out.print("Pilha:");
