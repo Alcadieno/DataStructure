@@ -54,4 +54,5 @@ public class NumerosPrimos {
             System.out.println("Valor "+busca+"  EH PRIMO");
         }
     }// Verifica se o numero buscado pertece ao ArrayList de numeros  Primos
-}
+} 
+//não tratei exceções :z !
