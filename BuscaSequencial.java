@@ -5,7 +5,7 @@ public class BuscaSequencial {
     public int busca(int[] arraynum ,int valorprocurado){
         for(int i=0 ; i<arraynum.length;i++){
             if(arraynum[i]==valorprocurado){
-                return i; // retorna o valor encontrado
+                return i; // retorna o valor encontrado , após percorrer todo o array ,  e comparar com o valor procurado
 
             }
         }
